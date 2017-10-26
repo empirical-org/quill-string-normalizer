@@ -6,17 +6,17 @@ describe('Replacing double quotation marks', () => {
   it('returns a sentence with normalized quotation marks', () => {
     const sentences: Array<string> = ['She said “that is not fair.”', 'She said ˝that is not fair.˝']
     const normalizedSentence: string = 'She said "that is not fair."'
-    assert.equal(sentences[0].stringNormalize(), normalizedSentence);
-    assert.equal(sentences[1].stringNormalize(), normalizedSentence);
+    assert.equal(stringNormalize(sentences[0]), normalizedSentence);
+    assert.equal(stringNormalize(sentences[1]), normalizedSentence);
   });
 });
 
 describe('Replacing single quotation marks', () => {
-  const sentence = "She said ‘that is not fair.’"
 
   it('returns a sentence with normalized quotation marks', () => {
+    const sentences = ["She said ‘that is not fair.’"]
     const normalizedSentence = "She said 'that is not fair.'"
-    assert.equal(sentence.stringNormalize(), normalizedSentence);
+    assert.equal(stringNormalize(sentences[0]), normalizedSentence);
   });
 });
 
@@ -31,23 +31,23 @@ describe('Replacing apostrophes', () => {
   const normalizedSentence = "He wouldn't go."
 
   it('returns a sentence with normalized apostrophes', () => {
-    assert.equal(sentences[0].stringNormalize(), normalizedSentence);
+    assert.equal(stringNormalize(sentences[0]), normalizedSentence);
   });
 
   it('returns a sentence with normalized apostrophes', () => {
-    assert.equal(sentences[1].stringNormalize(), normalizedSentence);
+    assert.equal(stringNormalize(sentences[1]), normalizedSentence);
   });
 
   it('returns a sentence with normalized apostrophes', () => {
-    assert.equal(sentences[2].stringNormalize(), normalizedSentence);
+    assert.equal(stringNormalize(sentences[2]), normalizedSentence);
   });
 
   it('returns a sentence with normalized apostrophes', () => {
-    assert.equal(sentences[3].stringNormalize(), normalizedSentence);
+    assert.equal(stringNormalize(sentences[3]), normalizedSentence);
   });
 
   it('returns a sentence with normalized apostrophes', () => {
-    assert.equal(sentences[4].stringNormalize(), normalizedSentence);
+    assert.equal(stringNormalize(sentences[4]), normalizedSentence);
   });
 });
 
@@ -60,14 +60,14 @@ describe('Replacing commas', () => {
   const normalizedSentence = "He said, she said."
 
   it('returns a sentence with normalized apostrophes', () => {
-    assert.equal(sentences[0].stringNormalize(), normalizedSentence);
+    assert.equal(stringNormalize(sentences[0]), normalizedSentence);
   });
 
   it('returns a sentence with normalized apostrophes', () => {
-    assert.equal(sentences[1].stringNormalize(), normalizedSentence);
+    assert.equal(stringNormalize(sentences[1]), normalizedSentence);
   });
 
   it('returns a sentence with normalized apostrophes', () => {
-    assert.equal(sentences[2].stringNormalize(), normalizedSentence);
+    assert.equal(stringNormalize(sentences[2]), normalizedSentence);
   });
 });
