@@ -43,10 +43,10 @@
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/emilia-friedberg/quill-string-normalizer.git"
+    "url": "git+https://github.com/empirical-org/quill-string-normalizer.git"
   },
   "bugs": {
-    "url": "https://github.com/emilia-friedberg/quill-string-normalizer/issues"
+    "url": "https://github.com/empirical-org/quill-string-normalizer.git/issues"
   },
-  "homepage": "https://github.com/emilia-friedberg/quill-string-normalizer#readme"
+  "homepage": "https://github.com/empirical-org/quill-string-normalizer.git#readme"
 }
