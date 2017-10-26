@@ -1,11 +1,11 @@
 import { assert } from 'chai';
-import { stringNormalize } from './main.ts'
+import { stringNormalize } from '../src/main.ts'
 
 describe('Replacing double quotation marks', () => {
 
   it('returns a sentence with normalized quotation marks', () => {
-    const sentences: Array<string> = ['She said “that is not fair.”', 'She said ˝that is not fair.˝']
-    const normalizedSentence: string = 'She said "that is not fair."'
+    const sentences = ['She said “that is not fair.”', 'She said ˝that is not fair.˝']
+    const normalizedSentence = 'She said "that is not fair."'
     assert.equal(sentences[0].stringNormalize(), normalizedSentence);
     assert.equal(sentences[1].stringNormalize(), normalizedSentence);
   });
