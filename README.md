@@ -35,29 +35,9 @@ npm run build
 npm run build:rollup
 ```
 
-## Defining a Dictionary
+### Using the Normalizer
 
-A dictionary is a list of words that potentially misspelled words will be compared against.
-
-A dictionary is formed by a list of newline separated words. E.g., `const dict = 'misspelled\nforked';`
-
-## Edits
-
-Edits are a list of ways that the app will recognize a word as being misspelled.
-
-For example, if you were to run:
-
-```
-import {edits} from '../src/main'
-edits("ryan")
-```
-
-the returned value would be an array of all acceptable misspellings of 'ryan'. E.g.
-
-```
-['yan', 'ran', 'ryn', 'rya', 'yran', 'rayn', 'ryna', 'ayan', 'byan', 'cyan', 'dyan', 'eyan', 'fyan', 'gyan', 'hyan', 'iyan', 'jyan', 'kyan', 'lyan', 'myan', 'nyan', 'oyan', 'pyan', 'qyan', 'ryan', 'syan', 'tyan', 'uyan', 'vyan', 'wyan', 'xyan', 'yyan', 'zyan', 'raan', 'rban', 'rcan', 'rdan', 'rean', 'rfan', 'rgan', 'rhan', 'rian', 'rjan', 'rkan', 'rlan', 'rman', 'rnan', 'roan', 'rpan', 'rqan', 'rran', 'rsan', 'rtan', 'ruan', 'rvan', 'rwan', 'rxan', 'ryan', 'rzan', 'ryan', 'rybn', 'rycn', 'rydn', 'ryen', 'ryfn', 'rygn', 'ryhn', 'ryin', 'ryjn', 'rykn', 'ryln', 'rymn', 'rynn', 'ryon', 'rypn', 'ryqn', 'ryrn', 'rysn', 'rytn', 'ryun', 'ryvn', 'rywn', 'ryxn', 'ryyn', 'ryzn', 'ryaa', 'ryab', 'ryac', 'ryad', 'ryae', 'ryaf', 'ryag', 'ryah', 'ryai', 'ryaj', 'ryak', 'ryal', 'ryam', 'ryan', 'ryao', 'ryap', 'ryaq', 'ryar', 'ryas', 'ryat', 'ryau', 'ryav', 'ryaw', 'ryax', 'ryay', 'ryaz', 'aryan', 'bryan', 'cryan', 'dryan', 'eryan', 'fryan', 'gryan', 'hryan', 'iryan', 'jryan', 'kryan', 'lryan', 'mryan', 'nryan', 'oryan', 'pryan', 'qryan', 'rryan', 'sryan', 'tryan', 'uryan', 'vryan', 'wryan', 'xryan', 'yryan', 'zryan', 'rayan', 'rbyan', 'rcyan', 'rdyan', 'reyan', 'rfyan', 'rgyan', 'rhyan', 'riyan', 'rjyan', 'rkyan', 'rlyan', 'rmyan', 'rnyan', 'royan', 'rpyan', 'rqyan', 'rryan', 'rsyan', 'rtyan', 'ruyan', 'rvyan', 'rwyan', 'rxyan', 'ryyan', 'rzyan', 'ryaan', 'ryban', 'rycan', 'rydan', 'ryean', 'ryfan', 'rygan', 'ryhan', 'ryian', 'ryjan', 'rykan', 'rylan', 'ryman', 'rynan', 'ryoan', 'rypan', 'ryqan', 'ryran', 'rysan', 'rytan', 'ryuan', 'ryvan', 'rywan', 'ryxan', 'ryyan', 'ryzan', 'ryaan', 'ryabn', 'ryacn', 'ryadn', 'ryaen', 'ryafn', 'ryagn', 'ryahn', 'ryain', 'ryajn', 'ryakn', 'ryaln', 'ryamn', 'ryann', 'ryaon', 'ryapn', 'ryaqn', 'ryarn', 'ryasn', 'ryatn', 'ryaun', 'ryavn', 'ryawn', 'ryaxn', 'ryayn', 'ryazn', 'ryana', 'ryanb', 'ryanc', 'ryand', 'ryane', 'ryanf', 'ryang', 'ryanh', 'ryani', 'ryanj', 'ryank', 'ryanl', 'ryanm', 'ryann', 'ryano', 'ryanp', 'ryanq', 'ryanr', 'ryans', 'ryant', 'ryanu', 'ryanv', 'ryanw', 'ryanx', 'ryany', 'ryanz']
-```
-
+This package exports a function called stringNormalize, which can be called on a string and will standardize punctuation.
 
 ## Memento (Steps)
 
