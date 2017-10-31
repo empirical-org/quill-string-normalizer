@@ -1,4 +1,4 @@
-# Quill Spellchecker
+# Quill String Normalizer
 
 - TypeScript 2.2
 - Webpack 2
