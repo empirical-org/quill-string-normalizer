@@ -1,12 +1,12 @@
 /*!
- * {LIB} v0.0.2
- * (c) 2017 {NAME}
+ * {LIB} v0.0.4
+ * (c) 2018 {NAME}
  * Released under the MIT License.
  */
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
 	typeof define === 'function' && define.amd ? define(['exports'], factory) :
-	(factory((global.lib = global.lib || {})));
+	(factory((global.lib = {})));
 }(this, (function (exports) { 'use strict';
 
 function stringNormalize(string) {

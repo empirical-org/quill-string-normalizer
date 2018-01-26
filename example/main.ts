@@ -1,5 +1,1 @@
-import { stringNormalize } from '../src/main';
-
-export default {
-  stringNormalize
-}
+export { stringNormalize } from '../src/main';
