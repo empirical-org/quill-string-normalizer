@@ -12,16 +12,15 @@ var banner =
     ' */';
 
 rollup.rollup({
-    entry: "./src/main.ts",
+    input: "./src/main.ts",
     plugins: [
-      typescript({clean: true,
-      rollupCommonJSResolveHack: true})
+      typescript()
     ]
 })
     .then(function (bundle) {
         return bundle.write({
             file: 'dist/lib.js',
-            format: 'umd',
+            format: 'cjs',
             banner: banner,
             name: 'lib'
         })

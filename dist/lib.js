@@ -1,13 +1,11 @@
 /*!
- * {LIB} v0.0.5
+ * {LIB} v0.0.6
  * (c) 2018 {NAME}
  * Released under the MIT License.
  */
-(function (global, factory) {
-	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
-	typeof define === 'function' && define.amd ? define(['exports'], factory) :
-	(factory((global.lib = {})));
-}(this, (function (exports) { 'use strict';
+'use strict';
+
+Object.defineProperty(exports, '__esModule', { value: true });
 
 function stringNormalize(string) {
     // in order: double quotation marks, single quotation marks and apostrophes, commas
@@ -15,8 +13,3 @@ function stringNormalize(string) {
 }
 
 exports.stringNormalize = stringNormalize;
-exports['default'] = stringNormalize;
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
-})));
