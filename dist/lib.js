@@ -1,5 +1,5 @@
 /*!
- * {LIB} v0.0.4
+ * {LIB} v0.0.5
  * (c) 2018 {NAME}
  * Released under the MIT License.
  */
@@ -15,6 +15,7 @@ function stringNormalize(string) {
 }
 
 exports.stringNormalize = stringNormalize;
+exports['default'] = stringNormalize;
 
 Object.defineProperty(exports, '__esModule', { value: true });
 

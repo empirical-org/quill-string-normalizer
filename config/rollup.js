@@ -14,7 +14,8 @@ var banner =
 rollup.rollup({
     entry: "./src/main.ts",
     plugins: [
-      typescript()
+      typescript({clean: true,
+      rollupCommonJSResolveHack: true})
     ]
 })
     .then(function (bundle) {
