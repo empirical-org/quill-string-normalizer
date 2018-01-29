@@ -1,6 +1,6 @@
 {
   "name": "quill-string-normalizer",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "String Normalizer for Quill.",
   "main": "dist/lib.js",
   "module": "dist/lib.js",
